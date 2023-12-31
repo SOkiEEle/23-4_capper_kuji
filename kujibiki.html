@@ -207,30 +207,44 @@
   const index = Math.floor(Math.random() * 5);
 
   const omikujiMsg = document.getElementById("omikuji-msg");
-  const index2 = Math.floor(Math.random() * 20);
+  const index2 = Math.floor(Math.random() * 30);
 
-  if (index2 >= 19) {
+  if (index2 >= 29) {
+    omikujiMsg.innerHTML = "運勢<br>サイクルヒット";
+    msgbox.innerHTML = "これで満足せず<br>精進しろッ！<br>";
+  } else if (index2 >= 28) {
     omikujiMsg.innerHTML = "運勢<br>満塁ホームラン";
-    msgbox.innerHTML = "4HR";
-  } else if (index2 >= 17) {
+    msgbox.innerHTML = "ここぞという時に<br>頼られるよう<br>正しく生きろッ！";
+  } else if (index2 >= 26) {
     omikujiMsg.innerHTML = "運勢<br>ホームラン";
-    msgbox.innerHTML = "毎打席ホームランの<br>１年を歩めるよう<br>精進するんだぞ";
-  } else if (index2 >= 15) {
+    msgbox.innerHTML = "毎打席ホームランの<br>１年を歩めるよう<br>精進しろッ！";
+  } else if (index2 >= 24) {
     omikujiMsg.innerHTML = "運勢<br>3BH";
-    msgbox.innerHTML = "あとちょっと<br>";
-  } else if (index2 >= 12) {
+    msgbox.innerHTML = "あとちょっとだ<br>絶えず努力しろッ！<br>";
+  } else if (index2 >= 21) {
     omikujiMsg.innerHTML = "運勢<br>2BH";
-    msgbox.innerHTML = "2BH";
-  } else if (index2 >= 7) {
-    omikujiMsg.innerHTML = "運勢<br>iBH";
-    msgbox.innerHTML = "物足りないなあ<br>";
-  } else if (index2 >= 3) {
-    omikujiMsg.innerHTML = "運勢<br>ファール";
-    msgbox.innerHTML = "普段も<br>決めきれないもんな<br>今年は決め切れよ";
+    msgbox.innerHTML = "上を向いて<br>積極的に行けッ！<br>";
+  } else if (index2 >= 17) {
+    omikujiMsg.innerHTML = "運勢<br>1BH";
+    msgbox.innerHTML = "まだ足りないぞ<br>思いっきり行けッ！<br>";
+  } else if (index2 >= 15) {
+    omikujiMsg.innerHTML = "運勢<br>ゴロアウト";
+    msgbox.innerHTML = "勢いが足りないぞ<br>今年はガンガン行けッ！<br>";
+  } else if (index2 >= 13) {
+    omikujiMsg.innerHTML = "運勢<br>フライアウト";
+    msgbox.innerHTML = "相手の思い通りに<br>なるなッ！<br>";
+  } else if (index2 >= 11) {
+    omikujiMsg.innerHTML = "運勢<br>大ファール";
+    msgbox.innerHTML = "道を外しているぞ<br>すぐに<br>修正しろッ！";
+  } else if (index2 >= 9) {
+    omikujiMsg.innerHTML = "運勢<br>ファールチップ";
+    msgbox.innerHTML = "かすっているなら<br>次は打てるぞ<br>今年は飛躍だッ！";
+  } else if (index2 >= 5) {
+    omikujiMsg.innerHTML = "運勢<br>見逃し三振";
+    msgbox.innerHTML = "消極的すぎるぞ<br>もっと積極的に<br>行けッ！";
   } else {
-    omikujiMsg.innerHTML = "運勢<br>三振";
-    msgbox.innerHTML = "いつも通りだな<br>まずはバットに<br>当てようぜ";
+    omikujiMsg.innerHTML = "運勢<br>空振り三振";
+    msgbox.innerHTML = "その積極性で<br>今年も行けッ！<br>";
   }
 
 </script>
-
