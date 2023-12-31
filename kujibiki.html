@@ -16,15 +16,11 @@
     <div id="main">
       <div id="frame" class="no-print"></div>
 
+      <div id="frame2" class="no-print" style="z-index:10"></div>
+
       <div id="card">
 
         <div id="omikuji-msg" style="z-index:10">あたり</div>
-
-        <!--
-        <div class="msg_box">
-          <div class="text">  </div>
-        </div>
-        -->
 
         <div id="msg"></div>
 
@@ -138,7 +134,7 @@
   }
   div#card {
     width: 6.0cm;
-    height: 12.0cm;
+    height: 10.0cm;
     background-color: #ffffff !important;
     display: flex;
     position: relative;
@@ -148,15 +144,15 @@
 
   div#frame {
     width: 6.05cm;
-    height: 12.05cm;
+    height: 10.05cm;
     border: 2px solid #000;
     position: absolute;
   }
 
   div#frame2 {
-    width: 5.35cm;
-    height: 11.35cm;
-    border: 2px solid #ff0000;
+    width: 5.55cm;
+    height: 9.55cm;
+    border: 3px solid #ff0000;
     position: absolute;
   }
 
@@ -218,22 +214,23 @@
     msgbox.innerHTML = "4HR";
   } else if (index2 >= 17) {
     omikujiMsg.innerHTML = "運勢<br>ホームラン";
-    msgbox.innerHTML = "HR";
+    msgbox.innerHTML = "毎打席ホームランの<br>１年を歩めるよう<br>精進するんだぞ";
   } else if (index2 >= 15) {
     omikujiMsg.innerHTML = "運勢<br>3BH";
-    msgbox.innerHTML = "3BH";
+    msgbox.innerHTML = "あとちょっと<br>";
   } else if (index2 >= 12) {
     omikujiMsg.innerHTML = "運勢<br>2BH";
     msgbox.innerHTML = "2BH";
   } else if (index2 >= 7) {
-    omikujiMsg.innerHTML = "運勢<br>1BH";
-    msgbox.innerHTML = "1BH";
+    omikujiMsg.innerHTML = "運勢<br>iBH";
+    msgbox.innerHTML = "物足りないなあ<br>";
   } else if (index2 >= 3) {
     omikujiMsg.innerHTML = "運勢<br>ファール";
-    msgbox.innerHTML = "普段も<br>決めきれないもんな";
+    msgbox.innerHTML = "普段も<br>決めきれないもんな<br>今年は決め切れよ";
   } else {
     omikujiMsg.innerHTML = "運勢<br>三振";
-    msgbox.innerHTML = "いつも通りだな";
+    msgbox.innerHTML = "いつも通りだな<br>まずはバットに<br>当てようぜ";
   }
 
 </script>
+
