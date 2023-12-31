@@ -25,18 +25,18 @@
         <div class = "rotate_kuji" style="z-index:100">
             <img 
             src="omikuji.png" 
-            width="175px"; 
+            width="185px"; 
             alt="サンプル画像が表示されます。" 
             >
         </div>
 
         <div id="address_l">
-            <a>くじを引く人の<br>名前を入れてから<br>今年の運勢を占おう！</a>
+            <a>くじを引く人の<br>名前を入れて<br>今年の運勢を占おう！</a>
         </div>
 
         <div class="input">
-            <form action="https://script.google.com/macros/s/AKfycbyee3pjUnhdE2cXsfhZxovtLIpSP3Q4sqjPQd8_a7F2RHmd6VAObQXmxf-mkrJiJIzpng/exec" method="POST" >
-            <input type="text" name="name" placeholder="お名前またはペンネーム" required>
+            <form action="https://script.google.com/macros/s/AKfycbzTNgFeL7CJWAsQRhshyxTR7DkTav--UFFaiG7htSg_EN7wIs3H8i8v73PqC_hk86n0fA/exec" method="POST" >
+            <input type="text" name="name" placeholder="名前" required>
             <input id="playButton" class="btn" type="submit"  value="おみくじを引く"> <!--onclick="location.href='https://www.google.co.jp/'"-->
             </form>
         </div>
@@ -52,6 +52,10 @@
   input {
     border: #000 2px solid;
     border-radius: 5px;
+    margin-bottom: 0px;
+    position:relative;
+			top: 80px;
+			left:0px;
   }
 
   textarea {
@@ -103,11 +107,11 @@
   }
 
 
-  /* 自分の名前の欄の設定 */
+  /* 説明欄の設定 */
   div#address_l{
     position: absolute;
-    top: 3.3cm;
-    right: 1.0cm;
+    top: 3.4cm;
+    right: 1.2cm;
     font-size: 0.3cm;
     text-align: center;
     font-family: "arial black", sans-serif;
@@ -139,8 +143,8 @@
     align-items: center;
   }
   div#card {
-    width: 9.0cm;
-    height: 12.0cm;
+    width: 9.5cm;
+    height: 9.0cm;
     background-color: #ffffff !important;
     display: flex;
     position: relative;
@@ -149,8 +153,8 @@
   }
 
   div#frame {
-    width: 9.05cm;
-    height: 12.05cm;
+    width: 9.55cm;
+    height: 9.05cm;
     border: 2px solid #000;
     position: absolute;
   }
@@ -183,15 +187,14 @@
   div.rotate_kuji {
     rotate: -30deg;
     position: absolute;
-    top: 0.2cm;
+    top: 0.5cm;
     bottom: 0.0cm;
-    left: 1.5cm;
+    left: 0.7cm;
   }
 
   div.HNYbox{
-    transform: skewY(0deg);
     width: 4.5cm;
-    height: 2.5cm;
+    height: 2.4cm;
     margin: auto auto;
     padding-left: 0.0cm;
     rotate: 0deg;
@@ -200,31 +203,10 @@
     background-color:#ffaeae;
     position: absolute;
     top: 0.5cm; 
-    left: 3.0cm;
+    left: 3.2cm;
     right: 0.0cm;
     border-radius: 0.2cm;
   }
 
 
 </style>
-
-
-
-
-<script>
-
-  const msgforme = document.getElementById("msgbox");
-  const namebox = document.getElementById("name");
-  const msgbox = document.getElementById("msg");
-  const index = Math.floor(Math.random() * 5);
-  const msglist = [
-    "幸多き一年と<br>なりますように！<br>",
-    "新たな気持ちで<br>がんばりましょう<br>",
-    "いつもありがとう<br>今年もよろしく！<br>",
-    "ともに飛躍の年に<br>しましょう！<br>",
-    "今年も切磋琢磨で<br>がんばりましょう<br>",
-  ];
-  msgbox.innerHTML = msglist[index];
-
-</script>
-
