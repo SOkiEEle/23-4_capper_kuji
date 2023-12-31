@@ -25,9 +25,17 @@
         <div class = "rotate_kuji" style="z-index:100">
             <img 
             src="omikuji.png" 
-            width="185px"; 
+            width="105px"; 
             alt="サンプル画像が表示されます。" 
             >
+        </div>
+
+        <div class = "hutasensei" style="z-index:100">
+          <img 
+          src="hutasensei.jpg" 
+          width="120px"; 
+          alt="サンプル画像が表示されます。" 
+          >
         </div>
 
         <div id="address_l">
@@ -36,8 +44,8 @@
 
         <div class="input">
             <form action="https://script.google.com/macros/s/AKfycbzY_IewjAEtO9v8cgFjyarDB492L1Aksoe9sGZVF8Rk8Xk2JVxpjdQcmqshSbFeYyKOHQ/exec" method="POST" >
-            <input type="text" name="name" placeholder="お名前" required>
-            <input id="playButton" class="btn" type="submit"  value="おみくじを引く"> 
+            <input type="text" name="name" placeholder="名前" style="width:150px;height:20px;font-size:15px;"  required >
+            <input id="playButton" class="btn" type="submit"  value="おみくじを引く" style="width:120px;height:26px;font-size:15px;"> 
             </form>
         </div>
 
@@ -54,19 +62,13 @@
     border-radius: 5px;
     margin-bottom: 0px;
     position:relative;
-	top: 80px;
-	left:0px;
+			top: 130px;
+			left:0px;
   }
 
   textarea {
     border: #000000 2px solid;
     border-radius: 5px;
-  }
-
-  * {
-    font-family: "arial black", sans-serif;
-    color: #333;
-    font-size: 0.4cm;
   }
 
   button {
@@ -110,9 +112,9 @@
   /* 説明欄の設定 */
   div#address_l{
     position: absolute;
-    top: 3.4cm;
-    right: 1.2cm;
-    font-size: 0.3cm;
+    top: 3.8cm;
+    right: 0.4cm;
+    font-size: 0.52cm;
     text-align: center;
     font-family: "arial black", sans-serif;
   }
@@ -185,37 +187,35 @@
   }
 
   div.rotate_kuji {
-    rotate: -30deg;
+    rotate: -5deg;
     position: absolute;
-    top: 0.5cm;
+    top: 0.4cm;
     bottom: 0.0cm;
-    left: 0.7cm;
+    left: 1.0cm;
+  }
+
+  div.hutasensei {
+    position: absolute;
+    top: 3.2cm;
+    bottom: 0.0cm;
+    left: 0.3cm;
   }
 
   div.HNYbox{
-    width: 4.5cm;
-    height: 2.4cm;
+    width: 6.5cm;
+    height: 2.5cm;
     margin: auto auto;
-    padding-left: 0.0cm;
+    padding-left: 2.5cm;
     rotate: 0deg;
     font-size: 1.5cm;
     text-align: center;
     background-color:#ffaeae;
     position: absolute;
     top: 0.5cm; 
-    left: 3.2cm;
+    left: 0.0cm;
     right: 0.0cm;
     border-radius: 0.2cm;
   }
 
 
 </style>
-
-<script>
-
-  const msgforme = document.getElementById("msgbox");
-  const namebox = document.getElementById("name");
-
-  const msgbox = document.getElementById("msg");
-
-</script>
